@@ -6,7 +6,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-       <Helmet title="You Are Doing Great" />
+       <Helmet title="You Are Doing Great"
+        meta={[
+          {property: 'og:title', content: 'The Rock'},
+          {property: 'og:image', content: 'http://ia.media-imdb.com/images/rock.jpg'},
+          {property: 'og:type', content: 'video.movie'},
+          {property: 'og:url', content: 'http://www.imdb.com/title/tt0117500/'},
+      ]}/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
